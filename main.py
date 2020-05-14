@@ -12,7 +12,7 @@ youtube = build('youtube', 'v3', credentials=creds)
 
 def getViewCount(id, API_KEY):
     r = requests.get(f'https://www.googleapis.com/youtube/v3/videos?part=statistics&id={id}&key={API_KEY}')
-    res = r.json()['items'][0]['statistics']['likeCount']
+    res = r.json()['items'][0]['statistics']['viewCount']
     print(r.json())
     return res
 
@@ -20,7 +20,7 @@ def updateViewCount(v):
     data = {
           'id': '2ZKmKoC_fgk',
           'snippet': {
-            'title': f'This video has {v} likes',
+            'title': f'This video has {v} views',
             'categoryId': '22',
           }
         }
