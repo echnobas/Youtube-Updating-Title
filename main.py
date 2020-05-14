@@ -2,7 +2,7 @@ import requests, time
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
-KEY = "AIzaSyAvclkDd9XDOG3AKOk-xhMegvhwyq0_1gU"
+KEY = "API_KEY_HERE"
 SECRET = 'secret.json'
 scopes = ["https://www.googleapis.com/auth/youtube"]
 
